@@ -14,11 +14,11 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        scoreTxt.text = score.ToString();
+        scoreTxt.text = score + " / 120".ToString();
 
         if (score > PlayerPrefs.GetInt("Highscore", 0))
         {
-            PlayerPrefs.SetInt("Highscore", 0);
+            PlayerPrefs.SetInt("Highscore", score);
         }
     }
 

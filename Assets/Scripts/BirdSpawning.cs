@@ -6,6 +6,7 @@ public class BirdSpawning : MonoBehaviour
     [SerializeField] Transform[] spawnPoints;
     [SerializeField] float startTimeBtwSpawns;
     float timeBtwSpawns;
+    int birdsSpawned;
 
     private void Start()
     {
@@ -16,12 +17,17 @@ public class BirdSpawning : MonoBehaviour
     {
         if (timeBtwSpawns <= 0)
         {
-            int randBird = Random.Range(0, birds.Length);
-            int randSpawnPoint = Random.Range(0, spawnPoints.Length);
+            if (birdsSpawned < 120)
+            {
+                int randBird = Random.Range(0, birds.Length);
+                int randSpawnPoint = Random.Range(0, spawnPoints.Length);
 
-            Instantiate(birds[randBird], spawnPoints[randSpawnPoint].position, Quaternion.identity);
+                Instantiate(birds[randBird], spawnPoints[randSpawnPoint].position, Quaternion.identity);
 
-            timeBtwSpawns = startTimeBtwSpawns;
+                timeBtwSpawns = startTimeBtwSpawns;
+
+                birdsSpawned++;
+            }
         }
         else
         {

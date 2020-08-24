@@ -8,6 +8,7 @@ public class Bird : MonoBehaviour
     [Header("Polish")]
     [SerializeField] GameObject deathEffect;
     [SerializeField] GameObject[] deathSound;
+    [SerializeField] GameObject winSound;
 
     private void Start()
     {
@@ -33,5 +34,14 @@ public class Bird : MonoBehaviour
     private void OnMouseDown()
     {
         Dead();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Basket"))
+        {
+            Instantiate(winSound, transform.position, Quaternion.identity);
+            other.GetComponent<LoadDeathScreen>().playerLose();
+        }
     }
 }
