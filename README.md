@@ -1,42 +1,10 @@
-# extra-credits-game-jam
- project for the extra credits game jam
+# The basket
 
-made with an artstyle inspired from kurzgesagt. 
+The Basket is a game made for the Extra Credits game jam, where the theme was "Take Care", with an artstyle inspired from Kurzgesagt. This game, there was an invasion of 120 total birds all going for a basket full of food. You, the protector of the basket has to drive away as many of these cute, squishy birds as possible.
 
-this is a small, clicking game made in a few hours over the weekend for the extra credits game jam. 
+# Demo
 
-![image](https://user-images.githubusercontent.com/69592270/91080204-30759200-e613-11ea-8728-0017139f4c58.png)
+You can try out a live demo [here]
 
-a small picture of the project. 
-
-you can try it out for ourself here at - https://hypehex.itch.io/the-basket
-
-Tools used: 
-
-Krita. 
-
-Unity 2019.4. 
-
-Audacity. 
-
-
-
-<!--All art in this game was made by me-->
-
-
-
-Music credits. 
-
--https://www.youtube.com/watch?v=qrgUzN7pE9Y
-
--https://www.youtube.com/watch?v=jAebfIiXllY&t=12s
-
-
-
-My socials !
-
-
-
--https://twitter.com/Harshhh_singh
-
--https://www.youtube.com/channel/UCeUQIgpJUxIA50adLVfw1bA?view_as=subscriber
+[Extra Credits]: https://www.youtube.com/user/ExtraCreditz
+[here]: https://hypehex.itch.io/the-basket
